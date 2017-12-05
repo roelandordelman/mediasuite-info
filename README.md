@@ -1,2 +1,2 @@
-# lilimelgar.github.io
-The personal website of Liliana Melgar Estrada
+# clariah.github.io
+The website of CLARIAH Media Suite Documentation
