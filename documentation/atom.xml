@@ -14,13 +14,13 @@ layout: feed
 		<email>mediastudies@clariah.nl</email>
 	</author>
 
-	{% for post in site.posts %}
+	{% for article in site.articles %}
 		<entry>
-			<title>{{ post.title }}</title>
-			<link href="https://clariah.github.io/mediasuite-info/{{ post.url }}"/>
-			<updated>{{ post.date | date_to_xmlschema }}</updated>
-			<id>https://clariah.github.io{{ post.id }}</id>
-			<content type="html">{{ post.content | xml_escape }}</content>
+			<title>{{ article.title }}</title>
+			<link href="https://clariah.github.io/mediasuite-info/{{ article.url }}"/>
+			<updated>{{ article.date | date_to_xmlschema }}</updated>
+			<id>https://clariah.github.io{{ article.id }}</id>
+			<content type="html">{{ article.content | xml_escape }}</content>
 		</entry>
 	{% endfor %}
 
