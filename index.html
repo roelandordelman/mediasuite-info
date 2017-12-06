@@ -4,13 +4,17 @@ title: Media Suite Documentation
 ---
 <div class="blurb">
   <div class="TOC">
-    <div class="toc"><a href="#docs-intro" class="indent-0 active"><span>Introduction</span></a><a href="#docs-context"
-                                                                                                   class="indent-0"><b>1.
-      Context</b></a><a href="#docs-data" class="indent-0"><b>2. Data</b></a><a href="#docs-tools" class="indent-0"><b>3.
-      Tools</b></a><a href="#docs-workspace" class="indent-0"><b>4. Workspace</b></a><a href="#docs-user-projects"
-                                                                                        class="indent-1"><span>4.1 User Projects</span></a><a
-      href="#docs-bookmarks-annotations" class="indent-2"><span>4.1.1 Bookmarks &amp; Annotations</span></a><a
-      href="#docs-tool-sessions" class="indent-2"><span>4.1.2 Tool Sessions</span></a></div>
+    <div class="toc">
+      <a href="#docs-intro" class="indent-0 active"><span>Introduction</span></a>
+      <a href="#docs-context" class="indent-0"><b>1.Context</b></a>
+      <a href="#docs-data" class="indent-0"><b>2. Data</b></a>
+      <a href="#docs-tools" class="indent-0"><b>3.Tools</b></a>
+      <a href="#docs-tools-collection-inspector" class="indent-0"><b>3.1.Inspect metadata</b></a>
+      <a href="#docs-workspace" class="indent-0"><b>4. Workspace</b></a>
+      <a href="#docs-user-projects" class="indent-1"><span>4.1 User Projects</span></a>
+      <a href="#docs-bookmarks-annotations" class="indent-2"><span>4.1.1 Bookmarks &amp; Annotations</span></a>
+      <a href="#docs-tool-sessions" class="indent-2"><span>4.1.2 Tool Sessions</span></a>
+    </div>
     <div class="children">
       <div class="child" id="docs-intro">
         <div><h1 class="anchor">Introduction</h1>
@@ -39,7 +43,7 @@ title: Media Suite Documentation
     -Go to the "Details" button of each tools to learn about each specific tool. There you will also find a link to the "User manuals" of each tool.
     -Click on the "Open" button of the tool if you are ready to use it. </p></div>
       </div>
-      <div class="child" id="docs-tools-collection inspector">
+      <div class="child" id="docs-tools-collection-inspector">
         <div><h3 class="anchor">4.1.1 Collection Inspector</h3>
           <p>The purpose of this recipe is to provide an overview of how a collection/dataset is constituted and also to allow a closer inspection of their metadata. It facilitates performing data analytics tasks on their metadata (e.g., detect incomplete data, observe value distributions along date fields), and sending the collection(s) to the other browsing and search recipes. It is important to have clear that the collection inspector does not give search results! For this purpose, the collections selected with this recipe have to be sent to the search recipes (step 5).</p>
           ![alt text][logo]
@@ -91,6 +95,20 @@ title: Media Suite Documentation
             odit fugit ea accusantium.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, aut id,
             consequatur ipsam quam dolorem magni laborum asperiores assumenda quos voluptatum? Quo dignissimos, possimus
             voluptatem odio odit fugit ea accusantium.</p></div>
+      </div><div class="child" id="tools-development">
+        <div><h1 class="anchor">5. Tools development</h1>
+          <p>Prototypes are currently hosted on a new infrastructure at the The Netherlands Institute for Sound and Vision (NISV) data centre (see the CLARIAH Lab). All tools and components developed within CLARIAH are open source, the Media Suite code is available in the GitHub repository.</p>
+          APIs
+          The APIs design allows the integration of new data of different formats and data models.
+          Collections API
+          high-level collection information (metadata: data format, size, etc.)
+          Search API
+          searching for collection items.
+          Annotation API
+          annotating existing data using W3C Web Annotation standard (mainly for manual annotations).
+          Data Enrichment API
+          collection enrichment through automatic mechanisms or by human interaction.
+        </div>
       </div>
     </div>
   </div>
