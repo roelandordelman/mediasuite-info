@@ -12,11 +12,11 @@ $(window).on('scroll', function () {
       $('.toc').find('.active').removeClass('active');
       $(elementById).addClass('active');
         if(elementID !== window.location.hash.substr(1)) {
-          // window.history.pushState("", "", '#' +elementID);
-          // return;
+          // changes the hash only when scrolling stops,
+          // sort of, sets a timeout for that. No straight
+          // way to get that event.
           clearTimeout( $.data( this, "scrollCheck" ) );
           $.data( this, "scrollCheck", setTimeout(function() {
-             console.log( 'stopped' );
             window.history.pushState("", "", '#' +elementID);
           }, 250) );
 
