@@ -13,16 +13,6 @@ $(window).on('scroll', function () {
             parser.href = location.href;
             $('.toc').find('.active').removeClass('active');
             $(elementById).addClass('active');
-            // changes the hash only when scrolling stops,
-            // sort of, sets a timeout for that. No straight
-            // way to get that event.
-        }
-
-        if (x === anchorElements.length - 1) {
-            clearTimeout($.data(this, "scrollCheck"));
-            $.data(this, "scrollCheck", setTimeout(function () {
-                window.history.pushState("", "", '#' + $(el).parent().parent().attr('id'));
-            }, 800));
         }
     });
 });
