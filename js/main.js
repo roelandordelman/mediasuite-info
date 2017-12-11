@@ -19,7 +19,6 @@ $(window).on('scroll', function () {
         }
 
         if (x === anchorElements.length - 1) {
-            console.log('last');
             clearTimeout($.data(this, "scrollCheck"));
             $.data(this, "scrollCheck", setTimeout(function () {
                 window.history.pushState("", "", '#' + $(el).parent().parent().attr('id'));
