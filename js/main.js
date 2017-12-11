@@ -23,7 +23,7 @@ $(window).on('scroll', function () {
             clearTimeout($.data(this, "scrollCheck"));
             $.data(this, "scrollCheck", setTimeout(function () {
                 window.history.pushState("", "", '#' + $(el).parent().parent().attr('id'));
-            }, 400));
+            }, 800));
         }
     });
 });
